@@ -1,1 +1,1 @@
-Hello from my EHAX project!
+Hello from a text file!
