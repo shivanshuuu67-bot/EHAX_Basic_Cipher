@@ -28,11 +28,3 @@ def vigenere_decrypt(text, key):
         decrypted += chr(p + ord('A'))
 
     return decrypted
-
-result = vigenere_encrypt("HELLO", "KEY")
-
-print(result)
-
-result = vigenere_decrypt("RIJVS", "KEY")
-
-print(result)

@@ -18,7 +18,3 @@ def get_input(data):
         return read_file(data)
 
     return read_text(data)
-
-result = get_input("message.txt")
-
-print(result)
