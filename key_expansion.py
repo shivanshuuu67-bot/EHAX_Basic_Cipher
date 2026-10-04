@@ -52,6 +52,16 @@ def sbox(byte):
 
     return result
 
+s_box = []
+
+for i in range(256):
+    s_box.append(sbox(i))
+
+inv_s_box = [0] * 256
+
+for i in range(256):
+    inv_s_box[s_box[i]] = i
+
 def rot_word(word):
 
     return word[1:] + word[:1]
