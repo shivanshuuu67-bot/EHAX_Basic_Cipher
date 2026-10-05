@@ -4,7 +4,6 @@ A command-line cryptography tool implemented in Python as part of the **EHAX Bas
 
 This project implements a classical cipher along with **AES-128 from scratch**, including AES key expansion, encryption/decryption, ECB and CBC modes, PKCS#7 padding, and hexadecimal/Base64 encoding.
 
-> **Educational Project:** The cryptographic algorithms in this project are implemented for learning and demonstration purposes. This implementation should not be used for protecting sensitive or production data.
 
 ---
 
@@ -498,110 +497,6 @@ Examples include:
 
 ---
 
-# Project Design
-
-The project separates functionality into independent modules.
-
-```text
-main.py
-   │
-   ├── classical.py
-   │       └── Vigenère
-   │
-   ├── aes.py
-   │       └── AES-128
-   │
-   ├── key_expansion.py
-   │       └── AES round keys
-   │
-   ├── modes.py
-   │       ├── ECB
-   │       └── CBC
-   │
-   ├── padding.py
-   │       └── PKCS#7
-   │
-   ├── encoding.py
-   │       ├── Hex
-   │       └── Base64
-   │
-   └── io_handler.py
-           └── String / File input
-```
-
-This modular structure makes the individual components easier to understand, test, and maintain.
-
----
-
-# Technologies Used
-
-- **Python 3**
-- Python `argparse`
-- Python standard library functionality
-- Custom AES implementation
-- Custom classical cipher implementation
-
-No external cryptographic library is required for the core cryptographic implementation.
-
----
-
-# Learning Objectives
-
-This project was developed to understand cryptography at an implementation level rather than simply calling a pre-built encryption library.
-
-The main concepts explored include:
-
-- Classical cryptography
-- Symmetric-key cryptography
-- Block ciphers
-- AES architecture
-- Finite-field arithmetic
-- Substitution and permutation
-- Diffusion and confusion
-- Key expansion
-- Block cipher modes
-- Padding
-- Encoding
-- Command-line application design
-- Modular Python programming
-
----
-
-# Security Disclaimer
-
-This project is intended for **educational purposes only**.
-
-Although AES-128 is a standardized cryptographic algorithm, this project is a learning implementation written from scratch. Production applications should use well-tested and audited cryptographic libraries instead of custom cryptographic implementations.
-
-Additionally, ECB mode has known security limitations because identical plaintext blocks produce identical ciphertext blocks. It is included here primarily for demonstrating AES block-cipher operation.
-
----
-
-# Future Improvements
-
-Possible future improvements include:
-
-- Support for additional classical ciphers
-- Additional AES modes
-- Stronger command-line input validation
-- Automated test vectors
-- Random IV generation
-- Improved file encryption/decryption workflows
-- More extensive error handling
-- A graphical user interface
-
----
-
 # Author
 
 **Shivanshu**
-
-EHAX College Project — Basic Cipher Implementation
-
----
-
-## Repository
-
-**EHAX_Basic_Cipher**
-
-This repository contains the complete implementation developed for the EHAX Basic Cipher project.
