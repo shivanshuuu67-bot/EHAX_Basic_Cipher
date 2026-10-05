@@ -1,7 +1,5 @@
 # EHAX Basic Cipher
 
-A command-line cryptography tool implemented in Python as part of the **EHAX Basic Cipher Implementation Project**.
-
 This project implements a classical cipher along with **AES-128 from scratch**, including AES key expansion, encryption/decryption, ECB and CBC modes, PKCS#7 padding, and hexadecimal/Base64 encoding.
 
 
